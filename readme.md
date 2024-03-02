@@ -2,7 +2,7 @@
 
 ###
 
-<p align="left">I'm a Mobile and WEB Developer, from Dinheirow</p>
+<p align="left">I'm a Mobile and WEB Developer</p>
 
 ###
 
