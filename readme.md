@@ -70,6 +70,6 @@
 ###
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=radical&locale=en&hide_border=false&username=brunossaless" height="150" alt="stats graph"  />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?locale=en&hide_title=false&layout=compact&card_width=320&langs_count=6&theme=radical&hide_border=false&username=brunossaless" height="150" alt="languages graph"  />
+  <img height="150em" src="https://github-readme-stats.vercel.app/api?username=brunossaless&show_icons=true&title_color=0195DD&icon_color=0BE36C&text_color=daf7dc&bg_color=050F2C&include_all_commits=true&count_private=true"/>
+  <img height="150em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=brunossaless&text_color=daf7dc&bg_color=050F2C&layout=compact&langs_count=7"/>
 </div>
