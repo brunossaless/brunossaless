@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-labelledby="t d">
+  <title id="t">Bruno Sales — Mobile Specialist and Full-Stack Engineer</title>
+  <desc id="d">Animated banner with the name Bruno Sales, a phone and a browser window, and rotating one-line pitches.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/>
+      <stop offset="0.55" stop-color="#1a1447"/>
+      <stop offset="1" stop-color="#083a52"/>
+    </linearGradient>
+    <linearGradient id="ink" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7c3aed"/>
+      <stop offset="1" stop-color="#06b6d4"/>
+    </linearGradient>
+    <radialGradient id="glowA"><stop offset="0" stop-color="#7c3aed" stop-opacity="0.55"/><stop offset="1" stop-color="#7c3aed" stop-opacity="0"/></radialGradient>
+    <radialGradient id="glowB"><stop offset="0" stop-color="#06b6d4" stop-opacity="0.45"/><stop offset="1" stop-color="#06b6d4" stop-opacity="0"/></radialGradient>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#ffffff" fill-opacity="0.08"/>
+    </pattern>
+    <clipPath id="round"><rect width="1200" height="320" rx="22"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#round)">
+    <rect width="1200" height="320" fill="url(#bg)"/>
+    <rect width="1200" height="320" fill="url(#dots)"/>
+
+    <circle r="230" fill="url(#glowA)">
+      <animate attributeName="cx" values="180;330;180" dur="14s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="60;150;60" dur="14s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="260" fill="url(#glowB)">
+      <animate attributeName="cx" values="1000;880;1000" dur="16s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="280;190;280" dur="16s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- phone -->
+    <g transform="translate(905 38)">
+      <animateTransform attributeName="transform" type="translate" values="905 44;905 32;905 44" dur="6s" repeatCount="indefinite"/>
+      <rect width="118" height="232" rx="22" fill="#0b1020" stroke="#a78bfa" stroke-width="2.5"/>
+      <rect x="9" y="14" width="100" height="204" rx="14" fill="url(#screen)" fill-opacity="0.9"/>
+      <rect x="40" y="6" width="38" height="5" rx="2.5" fill="#a78bfa"/>
+      <rect x="22" y="34" width="74" height="12" rx="6" fill="#fff" fill-opacity="0.85"/>
+      <rect x="22" y="58" width="52" height="8" rx="4" fill="#fff" fill-opacity="0.55"/>
+      <rect x="22" y="84" width="74" height="46" rx="10" fill="#0b1020" fill-opacity="0.35"/>
+      <rect x="22" y="140" width="74" height="30" rx="10" fill="#0b1020" fill-opacity="0.35"/>
+      <rect x="22" y="180" width="74" height="22" rx="11" fill="#fff" fill-opacity="0.9"/>
+    </g>
+
+    <!-- browser -->
+    <g transform="translate(985 112)">
+      <animateTransform attributeName="transform" type="translate" values="985 104;985 120;985 104" dur="7s" repeatCount="indefinite"/>
+      <rect width="170" height="128" rx="12" fill="#0b1020" stroke="#22d3ee" stroke-width="2.5"/>
+      <path d="M0 24h170" stroke="#22d3ee" stroke-opacity="0.6" stroke-width="2"/>
+      <circle cx="14" cy="12" r="3.5" fill="#a78bfa"/><circle cx="27" cy="12" r="3.5" fill="#22d3ee"/><circle cx="40" cy="12" r="3.5" fill="#fff" fill-opacity="0.7"/>
+      <text x="85" y="84" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="44" font-weight="700" fill="url(#ink)">&lt;/&gt;</text>
+    </g>
+
+    <!-- name -->
+    <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif">
+      <text x="70" y="124" font-size="68" font-weight="800" fill="#ffffff" letter-spacing="-1">Bruno Sales</text>
+      <text x="72" y="170" font-size="27" font-weight="600" fill="url(#ink)">Mobile Specialist  ·  Full-Stack Engineer  ·  UX-minded</text>
+
+      <!-- rotating one-liners -->
+      <g font-size="20" fill="#c9d1d9">
+        <text x="72" y="228">React Native &amp; Expo — iOS and Android apps shipped at scale
+          <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.29;0.33;0.96;1" dur="9s" repeatCount="indefinite"/>
+        </text>
+        <text x="72" y="228">Next.js · NestJS · Postgres — back ends and web apps end to end
+          <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.33;0.37;0.62;0.66;1" dur="9s" repeatCount="indefinite"/>
+        </text>
+        <text x="72" y="228">Accessible, fast and pixel-accurate UI, built with senior-level craft
+          <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.66;0.70;0.92;0.96;1" dur="9s" repeatCount="indefinite"/>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
