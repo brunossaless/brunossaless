@@ -1,14 +1,9 @@
-name: profile
+name: profile-stats
 
+# Regenera assets/stats.svg e assets/langs.svg. Manual por enquanto:
+# para atualizar todo dia, acrescente em "on:" um bloco "schedule: - cron: '17 6 * * *'".
 on:
-  schedule:
-    - cron: "17 6 * * *"
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - scripts/**
-      - .github/workflows/profile.yml
 
 permissions:
   contents: write
@@ -31,19 +26,3 @@ jobs:
             git commit -m "chore: update profile stats"
             git push
           fi
-
-  snake:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: Platane/snk/svg-only@v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
-      - uses: crazy-max/ghaction-github-pages@v4
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
